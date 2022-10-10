@@ -1,5 +1,5 @@
 {
-    "name": "pjvideogames.dynamicvalues.runtime",
+    "name": "PjVideoGames.DynamicValues",
     "rootNamespace": "DynamicValues",
     "references": [],
     "includePlatforms": [],

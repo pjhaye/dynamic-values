@@ -1,7 +1,9 @@
 ﻿using System;
 using DynamicValues.GameEvents;
 using Sirenix.OdinInspector;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace DynamicValues.DataSources
@@ -77,6 +79,7 @@ namespace DynamicValues.DataSources
             
         }
         
+#if UNITY_EDITOR
         private void OnPlayModeStateChange(PlayModeStateChange playModeStateChange)
         {
             if(playModeStateChange == PlayModeStateChange.ExitingEditMode)
@@ -95,6 +98,7 @@ namespace DynamicValues.DataSources
                 _isFirstAccess = true;
             }
         }
+#endif
 
         [Button(DisplayParameters = true, Style = ButtonStyle.Box)]
         public void ForceChangeValue(T value)

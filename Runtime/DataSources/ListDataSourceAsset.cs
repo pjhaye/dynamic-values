@@ -37,7 +37,7 @@ namespace DynamicValues.DataSources
         {
             _value.Remove(item);
             
-            OnItemRemove();
+            OnItemRemove(item);
         }
 
         public void AddRange(List<T> items)

@@ -7,7 +7,7 @@ namespace DynamicValues.GameEvents
     [CreateAssetMenu(menuName = "Dynamic Values/Game Events/Game Event")]
     public class GameEventAsset : ScriptableObject
     {
-        private List<GameEventListener> _listeners;
+        private List<GameEventListener> _listeners = new List<GameEventListener>();
 
         public void Dispatch()
         {

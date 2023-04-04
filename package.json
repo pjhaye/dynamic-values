@@ -1,6 +1,6 @@
 {
   "name": "com.pjvideogames.dynamicvalues",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "displayName": "Dynamic Values",
   "description": "My own implementation of using ScriptableObjects for variables, events and listeners. Required Odin Inspector to be installed from the Asset Store.",
   "unity": "2021.1",
